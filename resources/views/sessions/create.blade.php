@@ -19,7 +19,9 @@
 				</div>
 
 				<div class="form-group">
-					<label for="password">密码:</label>
+					<label for="password">密码:
+						
+					</label>
 					<input type="password" name="password" class="form-control" value="{{ old('password') }}">
 				</div>
 
@@ -32,7 +34,10 @@
 
 			<hr>
 
-			<p>还没账号?<a href="{{ route('signup') }}">现在注册!</a></p>
+			<p>
+				还没账号?<a href="{{ route('signup') }}">现在注册!</a>
+				<a href="{{ route('password.request') }}" style="float: right;">忘记密码>>></a>
+			</p>
 		</div>
 	</div>
 </div>
