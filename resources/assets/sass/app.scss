@@ -113,18 +113,22 @@ img.brand-icon {
 
 /* sidebar */
 aside {
-  section {
-    padding: 10px 0;
-    margin-top: 20px;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
+	textarea {
+		height: 100px;
+		margin-bottom: 5px;
+	}
+	section {
+		padding: 10px 0;
+		margin-top: 20px;
+		&:first-child {
+			border: 0;
+			padding-top: 0;
+	}
+	span {
+		display: block;
+		margin-bottom: 3px;
+		line-height: 1;
+	}
   }
 }
 
@@ -190,4 +194,50 @@ input {
 	float: right;
 	position: relative;
 	right: 0;
+}
+
+/* statuses */
+
+.statuses {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+	li {
+		padding: 10px 0;
+		border-top: 1px solid #e8e8e8;
+		position: relative;
+	}
+	.user {
+		margin-top: 5em;
+		padding-top: 0;
+	}
+	.content {
+		display: block;
+		margin-left: 60px;
+		word-break: break-word;
+		img {
+			display: block;
+			padding: 5px 0;
+		}
+	}
+	.timestamp {
+		color: $gray-light;
+		display: block;
+		margin-left: 60px;
+	}
+	.gravatar {
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	form {
+		button.status-delete-btn {
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+	}
+
+}
+.status_form {
+	margin-top: 20px;
 }
